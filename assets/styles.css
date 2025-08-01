@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+@keyframes drawGlow {
+  0% {
+    stroke-dasharray: 0, 300;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 300, 0;
+    opacity: 0.6;
+  }
+}
+
+.animate-draw-glow path {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 0;
+  animation: drawGlow 4s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 4px #3b82f6) drop-shadow(0 0 6px #3b82f6);
+}
+
+.animated-bg {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.08;
+  animation: floatBg 20s infinite ease-in-out alternate;
+}
+
+@keyframes floatBg {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-20px) rotate(3deg);
+  }
+}
+
+
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .animate-float-slow {
+      animation: float-slow 6s ease-in-out infinite;
+    }
+
+  @keyframes float-left {
+    0%, 100% {
+      transform: translateY(-25%) translateX(0);
+    }
+    50% {
+      transform: translateY(-30%) translateX(-10px);
+    }
+  }
+
+  @keyframes float-right {
+    0%, 100% {
+      transform: translateY(25%) translateX(0);
+    }
+    50% {
+      transform: translateY(30%) translateX(10px);
+    }
+  }
+
+  .float-left-wind {
+    animation: float-left 6s ease-in-out infinite;
+  }
+
+  .float-right-wind {
+    animation: float-right 6s ease-in-out infinite;
+  }
