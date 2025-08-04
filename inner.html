@@ -16,7 +16,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body class="font-sans">
@@ -66,7 +66,7 @@
                     healthcare</span>
             </a>
             <button data-collapse-toggle="navbar-multi-level" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                class="ml-auto inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="navbar-multi-level" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -80,7 +80,7 @@
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-[#1e3774] dark:border-gray-700">
                     <li>
                         <!-- .md\:dark\:text-blue-500 -->
-                        <a href="#"
+                        <a href="./index.html"
                             class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-white md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent hover:text-black"
                             aria-current="page">Home</a>
                     </li>
@@ -170,7 +170,7 @@
         </div>
 
         <!-- Content: Slider + Info -->
-        <div class="flex flex-col md:flex-row items-start gap-6">
+        <div class="flex  flex-col md:flex-row items-start gap-6 ">
             <!-- Image Slider -->
             <div class="w-full md:w-1/2" data-aos="fade-right">
                 <div class="swiper productSwiper rounded-xl shadow-lg overflow-hidden">
@@ -191,6 +191,31 @@
                     <!-- Swiper Pagination -->
                     <div class="swiper-pagination mt-2"></div>
                 </div>
+                <div class="flex items-center gap-2 mt-8" data-aos="fade-up">
+                    <span class="text-lg font-semibold"><i class="fa-solid fa-share"></i> Share On</span>
+                    <button data-sharer="facebook" data-url="https://yourwebsite.com"
+                        data-title="Checkout this awesome product offered by Company"
+                        class="w-8 h-8 bg-blue-800 text-white rounded flex items-center justify-center">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button data-sharer="twitter" data-url="https://yourwebsite.com"
+                        class="w-8 h-8 bg-blue-500 text-white rounded flex items-center justify-center">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button data-sharer="whatsapp" data-url="https://yourwebsite.com"
+                        class="w-8 h-8 bg-green-500 text-white rounded flex items-center justify-center">
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    <button data-sharer="linkedin" data-url="https://yourwebsite.com"
+                        class="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center">
+                        <i class="fab fa-linkedin-in"></i>
+                    </button>
+                    <button data-sharer="email" data-title="Product Details" data-subject="Check this out!"
+                        class="w-8 h-8 bg-orange-600 text-white rounded flex items-center justify-center">
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                </div>
+
             </div>
 
             <!-- Product Info -->
@@ -217,24 +242,24 @@
                     healthcare
                     professionals for reliability and compliance with all safety standards.
                 </p>
-                <p>
-                    Comes with a sturdy carry case, adjustable regulator, and built-in safety valve. Trusted by
-                    healthcare
-                    professionals for reliability and compliance with all safety standards.
-                </p>
-                <p>
-                    Comes with a sturdy carry case, adjustable regulator, and built-in safety valve. Trusted by
-                    healthcare
-                    professionals for reliability and compliance with all safety standards.
-                </p>
 
-                <p>
-                    Comes with a sturdy carry case, adjustable regulator, and built-in safety valve. Trusted by
-                    healthcare
-                    professionals for reliability and compliance with all safety standards.
-                </p>
             </div>
+
         </div>
+        <!-- if too much text use this  -->
+        <p class="text-gray-700 text-lg leading-relaxed mb-4" data-aos="fade-up">
+            Our oxygen cylinders are crafted using premium-grade materials that ensure top-notch durability and safety.
+            Each unit is rigorously tested to meet the highest standards for medical use, making it a reliable choice
+            for both clinical and home environments.
+        </p>
+        <p class="text-gray-700 text-lg leading-relaxed mb-4" data-aos="fade-up" data-aos-delay="100">
+            Designed with portability in mind, these cylinders come with ergonomic carry handles, adjustable flow
+            regulators, and an intuitive safety valve system that minimizes operational risks.
+        </p>
+        <p class="text-gray-700 text-lg leading-relaxed mb-4" data-aos="fade-up" data-aos-delay="200">
+            For custom bulk orders, certifications, or queries, feel free to reach out to our sales team for tailored
+            solutions.
+        </p>
     </section>
 
     <!-- All Product Section with Swiper Slider -->
@@ -1033,7 +1058,7 @@
 
 
     <!-- contact section -->
-    <section id="contact" class="py-16 bg-white">
+    <section id="contact" class="py-16 bg-white overflow-hidden relative">
         <div class="max-w-6xl mx-auto px-6">
             <!-- Heading -->
             <div class="text-center mb-12" data-aos="fade-up">
@@ -1297,10 +1322,16 @@
     </footer>
 
 
+    <!-- WhatsApp Floating Button with Animation -->
+    <a href="https://wa.me/919999999999" target="_blank"
+        class="fixed bottom-5 left-5 bg-green-500 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-all z-[51] animate-bounce-float">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
     <!-- bottom banner  -->
     <section>
         <div id="bottom-banner" tabindex="-1"
-            class="fixed bottom-0 start-0 z-50 flex justify-between w-full p-4 border-t border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+            class="fixed bottom-0 start-0 z-[50] flex justify-between w-full p-4 border-t border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
             <div class="flex items-center mx-auto">
                 <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
                     <span
@@ -1336,11 +1367,20 @@
 
     </section>
 
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn"
+        class="hidden fixed bottom-6 right-5 bg-blue-500 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-all z-[49] animate-bounce-float">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+
 
     <script src="./assets/script.js"></script>
 </body>
